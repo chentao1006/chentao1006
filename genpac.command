@@ -1,0 +1,1 @@
+genpac --format=pac --pac-proxy="PROXY sohonow.com:10080; SOCKS5 sohonow.com:10081; DIRECT" --gfwlist-proxy="PROXY sohonow.com:10080" --output "/Volumes/Projects/Personal/chentao1006/proxy.pac"
