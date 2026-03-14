@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网遐</title>
+    <meta name="description" content="陈涛的个人主页。陈年往事莫再提，涛声依旧笑声稀">
+    <link rel="stylesheet" href="css/globals.css">
+</head>
+
+<body>
+    <main class="container">
+        <header class="header-section animate-in">
+            <div class="header-top">
+                <img src="assets/images/avatar.png" alt="头像" class="avatar">
+                <div class="title-group">
+                    <h1>网遐</h1>
+                    <span class="name-small">陈涛 / chentao1006</span>
+                </div>
+            </div>
+
+            <div class="subtitle-container">
+                <div class="subtitle-secondary">陈年往事莫再提，涛声依旧笑声稀</div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://blog.ct106.com" target="_blank" title="博客">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                    </svg>
+                </a>
+                <a href="https://github.com/chentao1006" target="_blank" title="GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://x.com/chentao1006" target="_blank" title="X">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://instagram.com/chentao1006" target="_blank" title="Instagram">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="https://www.douban.com/people/chentao1006" target="_blank" title="豆瓣">
+                    <span class="douban-icon">豆</span>
+                </a>
+            </div>
+        </header>
+
+        <section class="projects-section animate-in" style="animation-delay: 0.1s;">
+            <div class="section-title">开源项目 / Projects</div>
+
+            <div class="project-list">
+                <div class="project-item" onclick="openProject('fluxmonitor')">
+                    <div class="project-item-header">
+                        <span class="project-item-title">Flux Monitor</span>
+                        <span class="project-item-tag">Mac Server / Monitoring</span>
+                    </div>
+                    <p class="project-item-desc">专为 Mac Server 设计的系统监控与服务管理面板。</p>
+                </div>
+
+                <div class="project-item" onclick="openProject('quitty')">
+                    <div class="project-item-header">
+                        <span class="project-item-title">Quitty</span>
+                        <span class="project-item-tag">macOS / Utility</span>
+                    </div>
+                    <p class="project-item-desc">当应用最后一个窗口关闭时，自动彻底退出该应用。</p>
+                </div>
+
+                <div class="project-item" onclick="openProject('sidey')">
+                    <div class="project-item-header">
+                        <span class="project-item-title">Sidey</span>
+                        <span class="project-item-tag">macOS / AI</span>
+                    </div>
+                    <p class="project-item-desc">一款专为 macOS 设计的轻量级、上下文感知的 AI 助手。</p>
+                </div>
+
+                <div class="project-item" onclick="openProject('lightforce')">
+                    <div class="project-item-header">
+                        <span class="project-item-title">Light Force</span>
+                        <span class="project-item-tag">Extension / UI</span>
+                    </div>
+                    <p class="project-item-desc">强制网页恢复亮色模式，为散光用户提供更好的阅读体验。</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="animate-in" style="animation-delay: 0.2s;">
+            <p>&copy; 1982 · 陈年往事莫再提，涛声依旧笑声稀</p>
+        </footer>
+    </main>
+
+    <dialog id="projectDialog">
+        <div class="dialog-header">
+            <h2 id="dialogTitle">项目详情</h2>
+            <div class="header-actions">
+                <div id="githubBadgeContainer"></div>
+                <button class="dialog-close" onclick="closeDialog()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="dialog-body" id="dialogBody">
+            <!-- Content will be injected by JS -->
+        </div>
+    </dialog>
+
+    <script>
+        const projects = {
+            fluxmonitor: {
+                title: "Flux Monitor",
+                subtitle: "专为作为服务器运行的 Mac 设计的系统监控与服务管理面板。",
+                tags: ["Mac Server", "Monitoring", "Dashboard"],
+                image: "assets/images/fluxmonitor.jpg",
+                content: `
+                    <h3>项目概述</h3>
+                    <p>浮光面板 (Flux Monitor) 是一款专为将 Mac 作为服务器使用的场景而设计的监控工具。它提供了一个直观的 Web 面板，让你可以随时随地掌握 Mac 的硬件状态和服务运行情况。</p>
+                    <h3>核心功能</h3>
+                    <ul>
+                        <li><strong>实时状态监控：</strong> 包括 CPU 负载、内存占用、磁盘空间及网络流量的实时曲线。</li>
+                        <li><strong>服务管理：</strong> 支持对常见的后端服务（如 Docker 容器、数据库、Web 服务器等）进行状态监测和控制。</li>
+                        <li><strong>针对 Mac 优化：</strong> 深度适配 Apple Silicon 芯片，精准获取传感器数据。</li>
+                    </ul>
+                `,
+                github: "https://github.com/chentao1006/FluxMonitor"
+            },
+            sidey: {
+                title: "Sidey",
+                subtitle: "Your Intelligent macOS Sidekick. 专为 macOS 打造的上下文感知 AI 助手。",
+                tags: ["macOS", "AI Assistant", "Swift"],
+                image: "assets/images/sidey.jpg",
+                content: `
+                    <h3>项目概述</h3>
+                    <p>Sidey 是一款轻量级的、上下文感知的 AI 助手，专为 macOS 用户设计。它始终陪伴在你的侧边，能够智能识别你当前正在使用的应用程序。</p>
+                    <h3>核心功能</h3>
+                    <ul>
+                        <li><strong>上下文感知：</strong> 自动检测当前最前端的应用程序，并建议相关的 Prompt。</li>
+                        <li><strong>自定义 Prompt：</strong> 为特定应用创建和管理不同的 AI 人格或任务。</li>
+                        <li><strong>全局热键：</strong> 通过键盘快捷键，从任何地方瞬间召唤助手。</li>
+                    </ul>
+                `,
+                github: "https://github.com/chentao1006/Sidey"
+            },
+            quitty: {
+                title: "Quitty",
+                subtitle: "当应用最后一个窗口关闭时，自动彻底退出该应用。",
+                tags: ["macOS", "Utility", "Performance"],
+                image: "assets/images/quitty.png",
+                isIcon: true,
+                content: `
+                    <h3>项目概述</h3>
+                    <p>Quitty 旨在解决 macOS “窗口关闭但应用不退出”的传统行为。它是 older 工具（如 SwiftQuit）的可靠、高性能且兼容 macOS Sequoia 的替代品。</p>
+                    <h3>核心功能</h3>
+                    <ul>
+                        <li><strong>自动终止：</strong> 当你关闭应用的最后一个窗口时，应用会立即退出。</li>
+                        <li><strong>事件驱动：</strong> 使用底层 Accessibility API，几乎不占用 CPU 资源。</li>
+                        <li><strong>过滤模式：</strong> 精准控制需要管理的应用列表。</li>
+                    </ul>
+                `,
+                github: "https://github.com/chentao1006/Quitty"
+            },
+            lightforce: {
+                title: "Light Force",
+                subtitle: "May the Light Force Drop the Darkness. 为散光用户而生的护眼工具。",
+                tags: ["Extension", "Userscript", "Accessibility"],
+                image: "assets/images/lightforce.png",
+                content: `
+                    <h3>项目概述</h3>
+                    <p>对于很多散光用户来说，在黑色背景上阅读白色文字会产生“光晕”效应。Light Force 强制将网页恢复为舒适的亮色模式。</p>
+                    <h3>核心功能</h3>
+                    <ul>
+                        <li><strong>精准打击：</strong> 智能识别那些强制渲染暗黑模式的网站。</li>
+                        <li><strong>一键切换：</strong> 通过精心设计的弹出框，瞬间开启或关闭扩展。</li>
+                        <li><strong>即时视觉反馈：</strong> 扩展图标带有“ON”标识。</li>
+                    </ul>
+                `,
+                github: "https://github.com/chentao1006/LightForce"
+            }
+        };
+
+        const dialog = document.getElementById('projectDialog');
+        const dialogTitle = document.getElementById('dialogTitle');
+        const dialogBody = document.getElementById('dialogBody');
+        const githubBadgeContainer = document.getElementById('githubBadgeContainer');
+
+        function openProject(id) {
+            const project = projects[id];
+            if (!project) return;
+
+            const repoUser = project.github.split('/').slice(-2)[0];
+            const repoName = project.github.split('/').slice(-2)[1];
+
+            dialogTitle.textContent = project.title;
+            githubBadgeContainer.innerHTML = `
+                <iframe src="https://ghbtns.com/github-btn.html?user=${repoUser}&repo=${repoName}&type=star&count=true&size=small" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+            `;
+
+            dialogBody.innerHTML = `
+                <div class="dialog-project-tags">
+                    ${project.tags.map(tag => `<span class="dialog-tag">${tag}</span>`).join('')}
+                </div>
+                <p class="subtitle" style="margin-bottom: 32px; font-weight: 500;">${project.subtitle}</p>
+                <div class="project-image-container ${project.isIcon ? 'is-icon' : ''}">
+                    <img src="${project.image}" alt="${project.title} 截图" class="project-screenshot">
+                </div>
+                ${project.content}
+                <a href="${project.github}" target="_blank" class="github-link-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    查看源代码
+                </a>
+            `;
+
+            dialog.showModal();
+            dialogBody.scrollTop = 0;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDialog() {
+            dialog.close();
+            document.body.style.overflow = '';
+        }
+
+        // Close on click outside
+        dialog.addEventListener('click', (e) => {
+            if (e.target === dialog) closeDialog();
+        });
+    </script>
+</body>
+
+</html>
