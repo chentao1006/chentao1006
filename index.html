@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>网遐</title>
     <meta name="description" content="陈涛的个人主页。陈年往事莫再提，涛声依旧笑声稀">
-    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/globals.css?20260314a">
 </head>
 
 <body>
@@ -67,7 +67,7 @@
             <div class="project-list">
                 <div class="project-item" onclick="openProject('fluxmonitor')">
                     <div class="project-item-header">
-                        <span class="project-item-title">Flux Monitor</span>
+                        <span class="project-item-title">Flux / 浮光</span>
                         <span class="project-item-tag">Mac Server / Monitoring</span>
                     </div>
                     <p class="project-item-desc">专为 Mac Server 设计的系统监控与服务管理面板。</p>
@@ -75,7 +75,7 @@
 
                 <div class="project-item" onclick="openProject('quitty')">
                     <div class="project-item-header">
-                        <span class="project-item-title">Quitty</span>
+                        <span class="project-item-title">Quitty / 静隐</span>
                         <span class="project-item-tag">macOS / Utility</span>
                     </div>
                     <p class="project-item-desc">当应用最后一个窗口关闭时，自动彻底退出该应用。</p>
@@ -83,7 +83,7 @@
 
                 <div class="project-item" onclick="openProject('sidey')">
                     <div class="project-item-header">
-                        <span class="project-item-title">Sidey</span>
+                        <span class="project-item-title">Sidey / 旁白</span>
                         <span class="project-item-tag">macOS / AI</span>
                     </div>
                     <p class="project-item-desc">一款专为 macOS 设计的轻量级、上下文感知的 AI 助手。</p>
@@ -91,10 +91,10 @@
 
                 <div class="project-item" onclick="openProject('lightforce')">
                     <div class="project-item-header">
-                        <span class="project-item-title">Light Force</span>
+                        <span class="project-item-title">Light Force / 光明原力</span>
                         <span class="project-item-tag">Extension / UI</span>
                     </div>
-                    <p class="project-item-desc">强制网页恢复亮色模式，为散光用户提供更好的阅读体验。</p>
+                    <p class="project-item-desc">强制将深色网页转变为亮色模式，提供更清爽、更舒适的阅读体验。</p>
                 </div>
             </div>
         </section>
@@ -126,7 +126,7 @@
     <script>
         const projects = {
             fluxmonitor: {
-                title: "Flux Monitor",
+                title: "Flux / 浮光",
                 subtitle: "专为作为服务器运行的 Mac 设计的系统监控与服务管理面板。",
                 tags: ["Mac Server", "Monitoring", "Dashboard"],
                 image: "assets/images/fluxmonitor.jpg",
@@ -143,13 +143,13 @@
                 github: "https://github.com/chentao1006/FluxMonitor"
             },
             sidey: {
-                title: "Sidey",
+                title: "Sidey / 旁白",
                 subtitle: "Your Intelligent macOS Sidekick. 专为 macOS 打造的上下文感知 AI 助手。",
                 tags: ["macOS", "AI Assistant", "Swift"],
                 image: "assets/images/sidey.jpg",
                 content: `
                     <h3>项目概述</h3>
-                    <p>Sidey 是一款轻量级的、上下文感知的 AI 助手，专为 macOS 用户设计。它始终陪伴在你的侧边，能够智能识别你当前正在使用的应用程序。</p>
+                    <p>Sidey (旁白) 是一款轻量级的、上下文感知的 AI 助手，专为 macOS 用户设计。它始终陪伴在你的侧边，能够智能识别你当前正在使用的应用程序。</p>
                     <h3>核心功能</h3>
                     <ul>
                         <li><strong>上下文感知：</strong> 自动检测当前最前端的应用程序，并建议相关的 Prompt。</li>
@@ -160,14 +160,14 @@
                 github: "https://github.com/chentao1006/Sidey"
             },
             quitty: {
-                title: "Quitty",
+                title: "Quitty / 静隐",
                 subtitle: "当应用最后一个窗口关闭时，自动彻底退出该应用。",
                 tags: ["macOS", "Utility", "Performance"],
                 image: "assets/images/quitty.png",
                 isIcon: true,
                 content: `
                     <h3>项目概述</h3>
-                    <p>Quitty 旨在解决 macOS “窗口关闭但应用不退出”的传统行为。它是 older 工具（如 SwiftQuit）的可靠、高性能且兼容 macOS Sequoia 的替代品。</p>
+                    <p>Quitty (静隐) 旨在解决 macOS “窗口关闭但应用不退出”的传统行为。它是 older 工具（如 SwiftQuit）的可靠、高性能且兼容 macOS Sequoia 的替代品。</p>
                     <h3>核心功能</h3>
                     <ul>
                         <li><strong>自动终止：</strong> 当你关闭应用的最后一个窗口时，应用会立即退出。</li>
@@ -178,13 +178,13 @@
                 github: "https://github.com/chentao1006/Quitty"
             },
             lightforce: {
-                title: "Light Force",
-                subtitle: "May the Light Force Drop the Darkness. 为散光用户而生的护眼工具。",
+                title: "Light Force / 光明原力",
+                subtitle: "May the Light Force Drop the Darkness. 将深色网页重塑为亮色模式的纯粹工具。",
                 tags: ["Extension", "Userscript", "Accessibility"],
                 image: "assets/images/lightforce.png",
                 content: `
                     <h3>项目概述</h3>
-                    <p>对于很多散光用户来说，在黑色背景上阅读白色文字会产生“光晕”效应。Light Force 强制将网页恢复为舒适的亮色模式。</p>
+                    <p>Light Force (光明原力) 致力于将深色背景的网页转变为舒爽的亮色显示。当许多网站为了所谓的“设计感”而强制采用难以阅读的深色调时，Light Force 帮助你瞬间找回清晰明亮的视觉体验。</p>
                     <h3>核心功能</h3>
                     <ul>
                         <li><strong>精准打击：</strong> 智能识别那些强制渲染暗黑模式的网站。</li>
