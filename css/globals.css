@@ -416,14 +416,13 @@ dialog::backdrop {
     transform: translateY(-1px);
 }
 
-.chrome-store-btn {
+.chrome-store-btn, .greasyfork-btn {
     display: inline-flex;
     align-items: center;
     gap: 10px;
     margin-top: 16px;
     padding: 10px 20px;
     background: #ffffff;
-    color: #1a73e8;
     border: 1px solid #dadce0;
     border-radius: 8px;
     text-decoration: none;
@@ -432,22 +431,35 @@ dialog::backdrop {
     transition: var(--transition-base);
 }
 
+.chrome-store-btn {
+    color: #1a73e8;
+}
+
+.greasyfork-btn {
+    color: #333333;
+}
+
 @media (prefers-color-scheme: dark) {
-    .chrome-store-btn {
+    .chrome-store-btn, .greasyfork-btn {
         background: #202124;
         border-color: #3c4043;
+    }
+    .chrome-store-btn {
         color: #8ab4f8;
+    }
+    .greasyfork-btn {
+        color: #e8eaed;
     }
 }
 
-.chrome-store-btn:hover {
+.chrome-store-btn:hover, .greasyfork-btn:hover {
     background: #f8f9fa;
     border-color: #d2d4d7;
     box-shadow: 0 1px 3px rgba(60, 64, 67, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
-    .chrome-store-btn:hover {
+    .chrome-store-btn:hover, .greasyfork-btn:hover {
         background: #28292c;
         border-color: #5f6368;
     }
