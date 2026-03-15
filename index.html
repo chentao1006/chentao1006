@@ -57,23 +57,35 @@
                         <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                     </svg>
                 </a>
+                <a href="https://www.v2ex.com/member/chentao1006" target="_blank" title="V2EX">
+                    <svg viewBox="0 0 96 96" width="96" height="96" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="8" y="8" width="80" height="80" rx="12" ry="12"></rect>
+                        <text x="48" y="66" text-anchor="middle" font-size="38" fill="currentColor" font-family="Arial, Helvetica, sans-serif">V2EX</text>
+                    </svg>
+                </a>
+                <a href="https://t.me/chentao1006" target="_blank" title="Telegram">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 4L12 20l-4-7-7-2z"/>
+                        <path d="M22 4L11 14"/>
+                    </svg>
+                </a>
             </div>
         </header>
 
         <section class="about-section animate-in" style="animation-delay: 0.05s;">
             <div class="section-title">关于 / About</div>
             <div class="about-content">
-                <p>我是<strong>陈涛</strong>，一名现居中国昆明的软件工程师，目前就职于 <a href="https://www.gurufocus.com"
-                        target="_blank">GuruFocus.com</a>。我深耕于 Web 与移动端开发，热衷于探索技术边界，致力于通过代码构建纯粹且高质量的数字化体验。</p>
-                <p>I am <strong>Tao Chen</strong>, a software engineer based in Kunming, China, currently working at <a
+                <p><strong>陈涛</strong>，一名现居中国昆明的软件工程师，目前就职于 <a href="https://www.gurufocus.com"
+                        target="_blank">GuruFocus.com</a>。深耕于 Web 与移动端开发，热衷于探索技术边界，致力于通过代码构建纯粹且高质量的数字化体验。</p>
+                <p><strong>Tao Chen</strong>, a software engineer based in Kunming, China, currently working at <a
                         href="https://www.gurufocus.com" target="_blank">GuruFocus.com</a>. With a focus on web and
-                    mobile development, I am passionate about crafting high-quality digital experiences and exploring
+                    mobile development, passionate about crafting high-quality digital experiences and exploring
                     the boundaries of modern technology.</p>
             </div>
         </section>
 
         <section class="projects-section animate-in" style="animation-delay: 0.1s;">
-            <div class="section-title">开源项目 / Projects</div>
+            <div class="section-title">个人项目 / Projects</div>
 
             <div class="project-list">
                 <div class="project-item" onclick="openProject('fluxmonitor')">
@@ -192,7 +204,7 @@
                 title: "Light Force / 光明原力",
                 subtitle: "May the Light Force Dispel the Darkness. 将暗黑网页重塑为纯净亮色模式的纯粹工具。",
                 tags: ["Extension", "Userscript", "Accessibility"],
-                image: "assets/images/lightforce.png",
+                image: "assets/images/lightforce.png?2",
                 content: `
                     <h3>项目概述 / Overview</h3>
                     <p>Light Force (光明原力) 致力于将深色背景的网页转变为舒爽的亮色显示。当许多网站为了所谓的“设计感”而强制采用难以阅读的深色调时，Light Force 帮助你瞬间找回清晰明亮的视觉体验。</p>
@@ -232,7 +244,7 @@
 
             dialogTitle.textContent = project.title;
             githubBadgeContainer.innerHTML = `
-                <iframe src="https://ghbtns.com/github-btn.html?user=${repoUser}&repo=${repoName}&type=star&count=true&size=small" frameborder="0" scrolling="0" width="100" height="20" title="GitHub"></iframe>
+                <iframe src="https://ghbtns.com/github-btn.html?user=${repoUser}&repo=${repoName}&type=star&count=true&size=small" frameborder="0" scrolling="0" width="90" height="20" title="GitHub"></iframe>
             `;
 
             dialogBody.innerHTML = `
