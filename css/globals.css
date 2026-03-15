@@ -163,6 +163,33 @@ h1 {
     padding-bottom: 8px;
 }
 
+.about-content p {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+.about-content strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.about-content a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: var(--transition-base);
+}
+
+.about-content a:hover {
+    border-bottom-color: var(--accent);
+}
+
 .project-list {
     display: flex;
     flex-direction: column;
@@ -387,6 +414,43 @@ dialog::backdrop {
 .github-link-btn:hover {
     opacity: 0.9;
     transform: translateY(-1px);
+}
+
+.chrome-store-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #1a73e8;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition-base);
+}
+
+@media (prefers-color-scheme: dark) {
+    .chrome-store-btn {
+        background: #202124;
+        border-color: #3c4043;
+        color: #8ab4f8;
+    }
+}
+
+.chrome-store-btn:hover {
+    background: #f8f9fa;
+    border-color: #d2d4d7;
+    box-shadow: 0 1px 3px rgba(60, 64, 67, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    .chrome-store-btn:hover {
+        background: #28292c;
+        border-color: #5f6368;
+    }
 }
 
 footer {

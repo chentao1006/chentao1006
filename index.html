@@ -31,10 +31,11 @@
 
             <div class="social-links">
                 <a href="https://blog.ct106.com" target="_blank" title="博客">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                         <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                        <path d="M15 13.5l4-4a2.1 2.1 0 0 1 3 3l-4 4-3 1 1-3z"></path>
                     </svg>
                 </a>
                 <a href="https://github.com/chentao1006" target="_blank" title="GitHub">
@@ -45,12 +46,8 @@
                         </path>
                     </svg>
                 </a>
-                <a href="https://x.com/chentao1006" target="_blank" title="X">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
-                        </path>
-                    </svg>
+                <a href="https://www.douban.com/people/chentao1006" target="_blank" title="豆瓣">
+                    <span class="douban-icon">豆</span>
                 </a>
                 <a href="https://instagram.com/chentao1006" target="_blank" title="Instagram">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
@@ -60,11 +57,20 @@
                         <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                     </svg>
                 </a>
-                <a href="https://www.douban.com/people/chentao1006" target="_blank" title="豆瓣">
-                    <span class="douban-icon">豆</span>
-                </a>
             </div>
         </header>
+
+        <section class="about-section animate-in" style="animation-delay: 0.05s;">
+            <div class="section-title">关于 / About</div>
+            <div class="about-content">
+                <p>我是<strong>陈涛</strong>，一名现居中国昆明的软件工程师，目前就职于 <a href="https://www.gurufocus.com"
+                        target="_blank">GuruFocus.com</a>。我深耕于 Web 与移动端开发，热衷于探索技术边界，致力于通过代码构建纯粹且高质量的数字化体验。</p>
+                <p>I am <strong>Tao Chen</strong>, a software engineer based in Kunming, China, currently working at <a
+                        href="https://www.gurufocus.com" target="_blank">GuruFocus.com</a>. With a focus on web and
+                    mobile development, I am passionate about crafting high-quality digital experiences and exploring
+                    the boundaries of modern technology.</p>
+            </div>
+        </section>
 
         <section class="projects-section animate-in" style="animation-delay: 0.1s;">
             <div class="section-title">开源项目 / Projects</div>
@@ -75,7 +81,7 @@
                         <span class="project-item-title">Flux / 浮光</span>
                         <span class="project-item-tag">Mac Server / Monitoring</span>
                     </div>
-                    <p class="project-item-desc">专为 Mac Server 设计的系统监控与服务管理面板。</p>
+                    <p class="project-item-desc">专为 Mac 服务器设计的系统监控与服务管理面板。</p>
                 </div>
 
                 <div class="project-item" onclick="openProject('quitty')">
@@ -83,7 +89,7 @@
                         <span class="project-item-title">Quitty / 静隐</span>
                         <span class="project-item-tag">macOS / Utility</span>
                     </div>
-                    <p class="project-item-desc">当应用最后一个窗口关闭时，自动彻底退出该应用。</p>
+                    <p class="project-item-desc">当应用最后一个窗口关闭时，自动彻底退出，保持系统简洁高效。</p>
                 </div>
 
                 <div class="project-item" onclick="openProject('sidey')">
@@ -91,7 +97,7 @@
                         <span class="project-item-title">Sidey / 旁白</span>
                         <span class="project-item-tag">macOS / AI</span>
                     </div>
-                    <p class="project-item-desc">一款专为 macOS 设计的轻量级、上下文感知的 AI 助手。</p>
+                    <p class="project-item-desc">专注 macOS 的轻量级、上下文感知 AI 助手，让智能触手可及。</p>
                 </div>
 
                 <div class="project-item" onclick="openProject('lightforce')">
@@ -99,7 +105,7 @@
                         <span class="project-item-title">Light Force / 光明原力</span>
                         <span class="project-item-tag">Extension / UI</span>
                     </div>
-                    <p class="project-item-desc">强制将深色网页转变为亮色模式，提供更清爽、更舒适的阅读体验。</p>
+                    <p class="project-item-desc">将深色网页重塑为亮色模式，找回最纯粹、清晰的阅读体验。</p>
                 </div>
             </div>
         </section>
@@ -111,7 +117,7 @@
 
     <dialog id="projectDialog">
         <div class="dialog-header">
-            <h2 id="dialogTitle">项目详情</h2>
+            <h2 id="dialogTitle">项目详情 / Details</h2>
             <div class="header-actions">
                 <div id="githubBadgeContainer"></div>
                 <button class="dialog-close" onclick="closeDialog()">
@@ -132,13 +138,13 @@
         const projects = {
             fluxmonitor: {
                 title: "Flux / 浮光",
-                subtitle: "专为作为服务器运行的 Mac 设计的系统监控与服务管理面板。",
+                subtitle: "专为 Mac 服务器设计的轻量级监控与服务管理面板。",
                 tags: ["Mac Server", "Monitoring", "Dashboard"],
                 image: "assets/images/fluxmonitor.jpg",
                 content: `
-                    <h3>项目概述</h3>
+                    <h3>项目概述 / Overview</h3>
                     <p>浮光面板 (Flux Monitor) 是一款专为将 Mac 作为服务器使用的场景而设计的监控工具。它提供了一个直观的 Web 面板，让你可以随时随地掌握 Mac 的硬件状态和服务运行情况。</p>
-                    <h3>核心功能</h3>
+                    <h3>核心功能 / Key Features</h3>
                     <ul>
                         <li><strong>实时状态监控：</strong> 包括 CPU 负载、内存占用、磁盘空间及网络流量的实时曲线。</li>
                         <li><strong>服务管理：</strong> 支持对常见的后端服务（如 Docker 容器、数据库、Web 服务器等）进行状态监测和控制。</li>
@@ -153,9 +159,9 @@
                 tags: ["macOS", "AI Assistant", "Swift"],
                 image: "assets/images/sidey.jpg",
                 content: `
-                    <h3>项目概述</h3>
+                    <h3>项目概述 / Overview</h3>
                     <p>Sidey (旁白) 是一款轻量级的、上下文感知的 AI 助手，专为 macOS 用户设计。它始终陪伴在你的侧边，能够智能识别你当前正在使用的应用程序。</p>
-                    <h3>核心功能</h3>
+                    <h3>核心功能 / Key Features</h3>
                     <ul>
                         <li><strong>上下文感知：</strong> 自动检测当前最前端的应用程序，并建议相关的 Prompt。</li>
                         <li><strong>自定义 Prompt：</strong> 为特定应用创建和管理不同的 AI 人格或任务。</li>
@@ -166,14 +172,14 @@
             },
             quitty: {
                 title: "Quitty / 静隐",
-                subtitle: "当应用最后一个窗口关闭时，自动彻底退出该应用。",
+                subtitle: "当应用最后一个窗口被关闭时，自动彻底结束进程，保持系统纯净。",
                 tags: ["macOS", "Utility", "Performance"],
                 image: "assets/images/quitty.png",
                 isIcon: true,
                 content: `
-                    <h3>项目概述</h3>
+                    <h3>项目概述 / Overview</h3>
                     <p>Quitty (静隐) 旨在解决 macOS “窗口关闭但应用不退出”的传统行为。它是 older 工具（如 SwiftQuit）的可靠、高性能且兼容 macOS Sequoia 的替代品。</p>
-                    <h3>核心功能</h3>
+                    <h3>核心功能 / Key Features</h3>
                     <ul>
                         <li><strong>自动终止：</strong> 当你关闭应用的最后一个窗口时，应用会立即退出。</li>
                         <li><strong>事件驱动：</strong> 使用底层 Accessibility API，几乎不占用 CPU 资源。</li>
@@ -184,18 +190,23 @@
             },
             lightforce: {
                 title: "Light Force / 光明原力",
-                subtitle: "May the Light Force Drop the Darkness. 将深色网页重塑为亮色模式的纯粹工具。",
+                subtitle: "May the Light Force Dispel the Darkness. 将暗黑网页重塑为纯净亮色模式的纯粹工具。",
                 tags: ["Extension", "Userscript", "Accessibility"],
                 image: "assets/images/lightforce.png",
                 content: `
-                    <h3>项目概述</h3>
+                    <h3>项目概述 / Overview</h3>
                     <p>Light Force (光明原力) 致力于将深色背景的网页转变为舒爽的亮色显示。当许多网站为了所谓的“设计感”而强制采用难以阅读的深色调时，Light Force 帮助你瞬间找回清晰明亮的视觉体验。</p>
-                    <h3>核心功能</h3>
+                    <h3>核心功能 / Key Features</h3>
                     <ul>
                         <li><strong>精准打击：</strong> 智能识别那些强制渲染暗黑模式的网站。</li>
                         <li><strong>一键切换：</strong> 通过精心设计的弹出框，瞬间开启或关闭扩展。</li>
                         <li><strong>即时视觉反馈：</strong> 扩展图标带有“ON”标识。</li>
                     </ul>
+                    <h3>获取安装 / Installation</h3>
+                    <div><a href="https://chromewebstore.google.com/detail/light-force/nbccbcgonogecldgcbelcjcnfcadmjcb" target="_blank" class="chrome-store-btn">
+                        <img src="https://fonts.gstatic.com/s/i/productlogos/chrome_store/v7/192px.svg" alt="Chrome Web Store" width="20" height="20">
+                        Chrome 应用商店 / Web Store
+                    </a></div>
                 `,
                 github: "https://github.com/chentao1006/LightForce"
             }
@@ -229,7 +240,7 @@
                 ${project.content}
                 <a href="${project.github}" target="_blank" class="github-link-btn">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                    查看源代码
+                    查看源代码 / View Source
                 </a>
             `;
 
