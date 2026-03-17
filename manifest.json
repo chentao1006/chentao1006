@@ -1,0 +1,21 @@
+{
+  "name": "网遐",
+  "short_name": "网遐",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "description": "陈涛的个人主页。陈年往事莫再提，涛声依旧笑声稀",
+  "icons": [
+    {
+      "src": "assets/images/avatar.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/avatar.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
