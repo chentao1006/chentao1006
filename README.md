@@ -1,7 +1,7 @@
-# Tao Chen / 陈涛
+# 网遐 / Tao Chen
 
-- 现居中国昆明的软件工程师，目前就职于 [GuruFocus.com](https://www.gurufocus.com)。深耕于 Web 与移动端开发，热衷于探索技术边界，致力于通过代码构建纯粹且高质量的数字化体验。
-- Software engineer based in Kunming, China, currently working at [GuruFocus.com](https://www.gurufocus.com). With a focus on web and mobile development, passionate about crafting high-quality digital experiences and exploring the boundaries of modern technology.
+- 软件工程师，目前就职于 [GuruFocus.com](https://www.gurufocus.com)。深耕于 Web 与移动端开发，热衷于探索技术边界，擅长用户体验设计，致力于通过代码构建纯粹且高质量的数字化体验。
+- Software engineer, currently working at [GuruFocus.com](https://www.gurufocus.com). With a focus on web and mobile development, good at user experience design, passionate about crafting high-quality digital experiences and exploring the boundaries of modern technology.
 
 ---
 
