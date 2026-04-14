@@ -424,11 +424,18 @@ dialog::backdrop {
     color: #ccc;
 }
 
+.dialog-footer-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
 .github-link-btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin-top: 24px;
     padding: 12px 24px;
     background: var(--text-primary);
     color: var(--bg);

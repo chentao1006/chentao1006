@@ -319,30 +319,33 @@
                 ${project.content}
             `;
 
+            let actionsHtml = '';
             if (project.download) {
                 let badge = '';
                 if (project.download.includes('apps.apple.com')) {
-                    badge = `<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/zh-cn?size=250x83&amp;releaseDate=1276560000&h=7914488fd5b3e64803716a5035e4e790" 
+                    badge = `<img src="assets/images/app-store-badge.svg" 
                         alt="Download on the App Store" style="height: 48px; display: block;">`;
                 } else {
                     badge = `<div class="github-link-btn" style="width: fit-content; margin-top: 0;">下载应用 / Download</div>`;
                 }
-                dialogHtml += `
-                    <div style="margin: 24px 0;">
-                        <a href="${project.download}" target="_blank" style="text-decoration: none;">
-                            ${badge}
-                        </a>
-                    </div>
+                actionsHtml += `
+                    <a href="${project.download}" target="_blank" style="text-decoration: none;">
+                        ${badge}
+                    </a>
                 `;
             }
 
             if (project.github) {
-                dialogHtml += `
+                actionsHtml += `
                     <a href="${project.github}" target="_blank" class="github-link-btn">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                         查看源代码 / View Source
                     </a>
                 `;
+            }
+
+            if (actionsHtml) {
+                dialogHtml += `<div class="dialog-footer-actions">${actionsHtml}</div>`;
             }
 
             dialogBody.innerHTML = dialogHtml;
