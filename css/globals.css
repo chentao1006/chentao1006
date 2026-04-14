@@ -204,6 +204,26 @@ h1 {
     cursor: pointer;
 }
 
+.project-item.has-icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.project-item-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    background: var(--bg-surface);
+}
+
+.project-item-info {
+    flex-grow: 1;
+}
+
 .project-item:hover {
     transform: translateX(4px);
 }
@@ -222,9 +242,7 @@ h1 {
 }
 
 .project-item-tag {
-    font-size: 0.75rem;
-    color: var(--text-tertiary);
-    font-family: var(--font-mono);
+    display: none;
 }
 
 .project-item-desc {
@@ -270,6 +288,18 @@ dialog::backdrop {
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dialog-header-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    flex-shrink: 0;
 }
 
 .dialog-close {
@@ -336,9 +366,7 @@ dialog::backdrop {
 }
 
 .dialog-project-tags {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 24px;
+    display: none;
 }
 
 .dialog-tag {
