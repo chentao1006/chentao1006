@@ -113,7 +113,7 @@
                     <img src="assets/images/flux-icon.png" alt="Flux 图标" class="project-item-icon">
                     <div class="project-item-info">
                         <div class="project-item-header">
-                            <span class="project-item-title">Flux / 浮光</span>
+                            <span class="project-item-title">Flux Monitor / 浮光面板</span>
                         </div>
                         <p class="project-item-desc">专为 Mac 服务器设计的系统监控与服务管理面板。</p>
                     </div>
@@ -126,6 +126,16 @@
                             <span class="project-item-title">Quitty / 静隐</span>
                         </div>
                         <p class="project-item-desc">当应用最后一个窗口关闭时，自动彻底退出，保持系统简洁高效。</p>
+                    </div>
+                </div>
+
+                <div class="project-item has-icon" onclick="openProject('browsync')">
+                    <img src="assets/images/browsync-icon.png" alt="BrowSync 图标" class="project-item-icon">
+                    <div class="project-item-info">
+                        <div class="project-item-header">
+                            <span class="project-item-title">BrowSync / 同览</span>
+                        </div>
+                        <p class="project-item-desc">让 Safari 与 Chromium 浏览器协同工作，支持智能分流与本地数据同步。</p>
                     </div>
                 </div>
 
@@ -199,7 +209,7 @@
                 github: "https://github.com/chentao1006/DiFangKe"
             },
             fluxmonitor: {
-                title: "Flux / 浮光",
+                title: "Flux Monitor / 浮光面板",
                 subtitle: "专为 Mac 服务器设计的轻量级监控与服务管理面板。",
                 tags: ["Mac Server", "Monitoring", "Dashboard"],
                 image: "assets/images/fluxmonitor.jpg",
@@ -251,6 +261,7 @@
                         <li><strong>过滤模式：</strong> 精准控制需要管理的应用列表。</li>
                     </ul>
                 `,
+                download: "https://github.com/chentao1006/Quitty/releases/latest",
                 github: "https://github.com/chentao1006/Quitty"
             },
             lightforce: {
@@ -281,6 +292,24 @@
                     </div>
                 `,
                 github: "https://github.com/chentao1006/LightForce"
+            },
+            browsync: {
+                title: "BrowSync / 同览",
+                subtitle: "让 Safari、Chrome、Arc、Edge 与 Brave 协同工作的 macOS 原生浏览器中枢。",
+                tags: ["macOS", "Browser", "Synchronization"],
+                icon: "assets/images/browsync-icon.png",
+                content: `
+                    <h3>项目概述 / Overview</h3>
+                    <p>BrowSync 是一款 macOS 原生应用，通过本地 WebSocket 守护进程与浏览器扩展，统一管理多浏览器协作体验。它支持智能 URL 分流，并在不同浏览器之间同步关键数据，帮助你在 Safari 与 Chromium 生态间无缝切换。</p>
+                    <h3>核心功能 / Key Features</h3>
+                    <ul>
+                        <li><strong>智能浏览器分流：</strong> 作为默认浏览器接管链接后，按域名、URL 规则、来源应用等条件自动路由到指定浏览器。</li>
+                        <li><strong>跨浏览器数据同步：</strong> 在 Safari 与 Chrome/Arc/Edge/Brave 之间同步 Cookies、LocalStorage、sessionStorage、标签页状态与书签。</li>
+                        <li><strong>本地优先与隐私保护：</strong> 全部通信在本机完成（<code>ws://127.0.0.1:62333</code>），不依赖外部服务器。</li>
+                    </ul>
+                `,
+                download: "https://browsync.ct106.com/",
+                github: "https://github.com/chentao1006/BrowSync"
             }
         };
 
