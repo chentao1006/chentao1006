@@ -9,7 +9,6 @@
 
 - [Home / 首页](https://ct106.com)
 - [Blog / 博客](https://blog.ct106.com)
-- [Douban / 豆瓣](https://www.douban.com/people/chentao1006)
 - [Instagram](https://instagram.com/chentao1006)
 - [V2EX](https://www.v2ex.com/member/chentao1006)
 - [Telegram](https://t.me/chentao1006)
