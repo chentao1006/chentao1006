@@ -149,12 +149,12 @@
                 </div>
 
                 <div class="project-item has-icon" onclick="openProject('lightforce')">
-                    <img src="assets/images/lightforce-icon.png" alt="Light Force 图标" class="project-item-icon">
+                    <img src="assets/images/lightforce-icon.png" alt="Dark Light 图标" class="project-item-icon">
                     <div class="project-item-info">
                         <div class="project-item-header">
-                            <span class="project-item-title">Light Force / 光明原力</span>
+                            <span class="project-item-title">Dark Light / 暗光</span>
                         </div>
-                        <p class="project-item-desc">将深色网页重塑为亮色模式，找回最纯粹、清晰的阅读体验。</p>
+                        <p class="project-item-desc">浏览器深色插件，还能将深色网页重塑为亮色模式，找回最纯粹、清晰的阅读体验。</p>
                     </div>
                 </div>
             </div>
@@ -264,14 +264,16 @@
                 github: "https://github.com/chentao1006/Quitty"
             },
             lightforce: {
-                title: "Light Force / 光明原力",
-                subtitle: "May the Light Force Dispel the Darkness. 将暗黑网页重塑为纯净亮色模式的纯粹工具。",
+                title: "Dark Light / 暗光",
+                subtitle: "重塑网页深浅的浏览器扩展. 将暗黑网页重塑为纯净亮色模式的纯粹工具。",
                 tags: ["Extension", "Userscript", "Accessibility"],
                 image: "assets/images/lightforce.png?4",
                 icon: "assets/images/lightforce-icon.png",
                 content: `
                     <h3>项目概述 / Overview</h3>
-                    <p>Light Force (光明原力) 致力于将深色背景的网页转变为舒爽的亮色显示。当许多网站为了所谓的“设计感”而强制采用难以阅读的深色调时，Light Force 帮助你瞬间找回清晰明亮的视觉体验。</p>
+                    <p>黑暗还是光明，由你决定。<br>
+暗光是一个轻量浏览器扩展，由你来决定每个网站显示成什么外观。<br>
+和常见只支持深色模式的插件不同，暗光还提供可靠的强制浅色模式。浅色网站可变深，深色网站也可变浅。</p>
                     <h3>核心功能 / Key Features</h3>
                     <ul>
                         <li><strong>精准打击：</strong> 智能识别那些强制渲染暗黑模式的网站。</li>
@@ -280,17 +282,14 @@
                     </ul>
                     <h3>获取安装 / Installation</h3>
                     <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-                        <a href="https://chromewebstore.google.com/detail/light-force/nbccbcgonogecldgcbelcjcnfcadmjcb" target="_blank" class="chrome-store-btn">
+                        <a href="https://chromewebstore.google.com/detail/dark-light/jmckaadolajjpcmlciacmdenlfkolnhf" target="_blank" class="chrome-store-btn">
                             <img src="https://fonts.gstatic.com/s/i/productlogos/chrome_store/v7/192px.svg" alt="Chrome Web Store" width="20" height="20">
                             Chrome 应用商店 / Web Store
                         </a>
-                        <a href="https://greasyfork.org/scripts/568876" target="_blank" class="greasyfork-btn">
-                            <img src="https://greasyfork.org/vite/assets/blacklogo96-CxYTSM_T.png" alt="Greasy Fork" width="20" height="20">
-                            Greasy Fork 脚本 / Userscript
-                        </a>
                     </div>
                 `,
-                github: "https://github.com/chentao1006/LightForce"
+                download: "http://darklight.ct106.com",
+                github: "https://github.com/chentao1006/DarkLight"
             },
             browsync: {
                 title: "BrowSync / 同览",
@@ -394,7 +393,7 @@
         });
     </script>
 
-<!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJDGHNCQHP"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
