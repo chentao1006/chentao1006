@@ -241,6 +241,17 @@ h1 {
     color: var(--text-primary);
 }
 
+.project-website {
+    color: var(--accent);
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.project-website:hover {
+    text-decoration: underline;
+}
+
 .project-item-tag {
     display: none;
 }
@@ -432,7 +443,12 @@ dialog::backdrop {
     margin-top: 32px;
 }
 
-.github-link-btn {
+.plugin-download-row {
+    margin-top: 16px;
+}
+
+.github-link-btn,
+.website-link-btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -446,7 +462,8 @@ dialog::backdrop {
     transition: var(--transition-base);
 }
 
-.github-link-btn:hover {
+.github-link-btn:hover,
+.website-link-btn:hover {
     opacity: 0.9;
     transform: translateY(-1px);
 }
@@ -455,7 +472,7 @@ dialog::backdrop {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    margin-top: 16px;
+    margin-top: 0;
     padding: 10px 20px;
     background: #ffffff;
     border: 1px solid #dadce0;
