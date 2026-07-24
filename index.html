@@ -65,12 +65,9 @@
                         </path>
                     </svg>
                 </a>
-                <a href="https://instagram.com/chentao1006" target="_blank" title="Instagram">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                <a href="https://x.com/chentao1006" target="_blank" rel="noopener noreferrer" title="X">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M18.9 2H22l-6.77 7.73L23.2 22h-6.24l-4.89-7.57L5.44 22H2.33l7.24-8.28L1.92 2h6.4l4.42 6.9L18.9 2Zm-1.09 18h1.72L7.39 3.9H5.54L17.81 20Z" />
                     </svg>
                 </a>
                 <a href="https://www.v2ex.com/member/chentao1006" target="_blank" title="V2EX">
@@ -112,7 +109,6 @@
                     <div class="project-item-info">
                         <div class="project-item-header">
                             <span class="project-item-title">地方客</span>
-                            <a class="project-website" href="https://difangke.cn" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">官网</a>
                         </div>
                         <p class="project-item-desc">走过的地方，就是你的生活。记录足迹，发现生活节奏的轻量记录工具。</p>
                     </div>
@@ -123,7 +119,6 @@
                     <div class="project-item-info">
                         <div class="project-item-header">
                             <span class="project-item-title">BrowSync / 同览</span>
-                            <a class="project-website" href="https://browsync.ct106.com" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">官网</a>
                         </div>
                         <p class="project-item-desc">让所有浏览器协同工作，支持智能分流与本地数据同步。</p>
                     </div>
@@ -134,7 +129,6 @@
                     <div class="project-item-info">
                         <div class="project-item-header">
                             <span class="project-item-title">Flux Monitor / 浮光面板</span>
-                            <a class="project-website" href="https://flux.ct106.com" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">官网</a>
                         </div>
                         <p class="project-item-desc">专为 Mac 服务器设计的系统监控与服务管理面板。</p>
                     </div>
@@ -145,7 +139,6 @@
                     <div class="project-item-info">
                         <div class="project-item-header">
                             <span class="project-item-title">Quitty / 静隐</span>
-                            <a class="project-website" href="https://quitty.ct106.com" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">官网</a>
                         </div>
                         <p class="project-item-desc">当应用最后一个窗口关闭时，自动彻底退出，保持系统简洁高效。</p>
                     </div>
@@ -156,7 +149,6 @@
                     <div class="project-item-info">
                         <div class="project-item-header">
                             <span class="project-item-title">Sidey / 旁白</span>
-                            <a class="project-website" href="https://sidey.ct106.com" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">官网</a>
                         </div>
                         <p class="project-item-desc">专注 macOS 的轻量级、上下文感知 AI 助手，让智能触手可及。</p>
                     </div>
@@ -167,7 +159,6 @@
                     <div class="project-item-info">
                         <div class="project-item-header">
                             <span class="project-item-title">Dark Light / 暗光</span>
-                            <a class="project-website" href="https://darklight.ct106.com" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">官网</a>
                         </div>
                         <p class="project-item-desc">浏览器深色插件，还能将深色网页重塑为亮色模式，找回最纯粹、清晰的阅读体验。</p>
                     </div>
@@ -376,8 +367,15 @@
             }
 
             dialogTitle.innerHTML = `
-                ${project.icon ? `<img src="${project.icon}" alt="" class="dialog-header-icon">` : ''}
-                <span>${project.title}</span>
+                ${project.website ? `
+                    <a href="${project.website}" target="_blank" rel="noopener noreferrer" class="dialog-title-link">
+                        ${project.icon ? `<img src="${project.icon}" alt="" class="dialog-header-icon">` : ''}
+                        <span>${project.title}</span>
+                    </a>
+                ` : `
+                    ${project.icon ? `<img src="${project.icon}" alt="" class="dialog-header-icon">` : ''}
+                    <span>${project.title}</span>
+                `}
             `;
 
             let dialogHtml = `
