@@ -1,7 +1,9 @@
 # 网遐 / Tao Chen
 
-- 软件工程师，目前就职于 [GuruFocus.com](https://www.gurufocus.com)。深耕于 Web 与移动端开发，热衷于探索技术边界，擅长用户体验设计，致力于通过代码构建纯粹且高质量的数字化体验。
-- Software engineer, currently working at [GuruFocus.com](https://www.gurufocus.com). With a focus on web and mobile development, good at user experience design, passionate about crafting high-quality digital experiences and exploring the boundaries of modern technology.
+- 做了很多年软件，现在比起怎么做，更在意想做什么。
+- 喜欢把一些突发奇想变成真正能用的小东西，也喜欢科技、自然、电影，以及关于未来的各种想象。
+- I've spent years building software, but these days I'm more interested in what to create than how to build it.
+- I enjoy turning random ideas into things that actually work, and I'm curious about technology, nature, films, and the possibilities of the future.
 
 ---
 
